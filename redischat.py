@@ -41,15 +41,16 @@ def stream():
     pubsub.subscribe(chat_channel)
     # 监听订阅的广播
     for message in pubsub.listen():
-        print(message)
         if message['type'] == 'message':
             data = message['data'].decode('utf-8')
             # 用 sse 返回给前端
+            print('data',data)
             yield 'data: {}\n\n'.format(data)
 
 
 @app.route('/chat/subscribe')
 def subscribe():
+    print('subscribe')
     return flask.Response(stream(), mimetype="text/event-stream")
 
 
@@ -77,7 +78,7 @@ def chat_add():
         'created_time': current_time(),
     }
     message = json.dumps(r, ensure_ascii=False)
-    print('debug', message)
+    # print('debug', message)
     # 用 redis 发布消息
     red.publish(chat_channel, message)
     return 'OK'
