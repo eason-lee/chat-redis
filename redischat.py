@@ -8,6 +8,7 @@ import json
 '''
 # 安装redis
 sudo apt-get install redis-server
+sudo pip3 install redis
 # 启动redis服务器
 (redis-server &) 用括号可以使这个服务器一直在后台运行
 # 使用 gunicorn 启动
