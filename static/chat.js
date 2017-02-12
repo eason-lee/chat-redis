@@ -71,6 +71,7 @@
 
     var chatResponse = function(r) {
         var chat = JSON.parse(r);
+        log('chat',chat)
         chatStore[chat.channel].push(chat);
         if(chat.channel == currentChannel) {
             insertChatItem(chat);
