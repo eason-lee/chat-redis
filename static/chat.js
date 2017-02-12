@@ -71,7 +71,6 @@
 
     var chatResponse = function(r) {
         var chat = JSON.parse(r);
-        log('chat',chat)
         log('chatStore',chatStore,chatStore[chat.channel])
         chatStore[chat.channel].push(chat);
         if(chat.channel == currentChannel) {
@@ -95,7 +94,6 @@
         content: content,
         channel: currentChannel,
       };
-
       var request = {
         url: '/chat/add',
         type: 'post',
