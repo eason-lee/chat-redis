@@ -53,7 +53,7 @@ def subscribe():
     return flask.Response(stream(), mimetype="text/event-stream")
 
 
-@app.route('/')
+@app.route('/chat')
 def index_view():
     return flask.render_template('index.html')
 
