@@ -18,9 +18,10 @@
     display: block;
     padding-left: 20px;
     font-size: 20px;
+    height: 65px;
 }
 .active {
-    background: red;
+    background: #0078e7;
 }
 
 .rc-main {
@@ -32,11 +33,11 @@
 
 #id-div-chats {
     /*background: red;*/
-    height: 80%;
+    height: 70%;
     overflow-y: scroll;
 }
 
 .rc-input {
     height: 30%;
-  
+
 }
