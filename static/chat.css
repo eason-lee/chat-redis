@@ -33,7 +33,7 @@
 
 .rc-chats-title {
   display: block;
-  padding-left: 67px;
+  padding-left: 48%;
   font-size: 20px;
   height: 49px;
   padding-top: 17px;
@@ -53,7 +53,7 @@
 
 #id-div-chats {
     /*background: red;*/
-    height: 70%;
+    height: 62%;
     overflow-y: scroll;
     padding-top: 15px;
 }
