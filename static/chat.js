@@ -79,7 +79,7 @@
     };
 
     var subscribe = function() {
-      var sse = new EventSource("/subscribe");
+      var sse = new EventSource("/chat/subscribe");
       sse.onmessage = function(e) {
         log(e, e.data);
         chatResponse(e.data);
