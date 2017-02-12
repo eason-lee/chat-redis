@@ -14,12 +14,28 @@
     height: 70%;
 }
 
+.rc-title-h1{
+    color: #0078e7;
+}
+
 .rc-channel {
     display: block;
-    padding-left: 20px;
+    padding-left: 67px;
     font-size: 20px;
-    height: 65px;
+    height: 49px;
+    padding-top: 17px;
+    color: #61605d;
 }
+
+.rc-chats-title {
+  display: block;
+  padding-left: 67px;
+  font-size: 20px;
+  height: 49px;
+  padding-top: 17px;
+  color: #61605d;
+}
+
 .active {
     background: #0078e7;
 }

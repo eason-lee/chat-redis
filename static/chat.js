@@ -114,6 +114,7 @@
     var changeChannel = function(channel) {
         document.title = '聊天室 - ' + channel;
         currentChannel = channel;
+        $('#id-div-chats-title').text(channel)
     };
 
     var bindActions = function(){
