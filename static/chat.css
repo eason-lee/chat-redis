@@ -1,10 +1,17 @@
 .rc-full-width {
-    width: 90%;
+    width: 100%;
 }
 
 .rc-left {
-    float: left;
-    width: 100px;
+    width: 30%;
+}
+
+.rc-right{
+  width: 70%;
+}
+
+.rc-chats{
+    height: 70%;
 }
 
 .rc-channel {
@@ -17,7 +24,10 @@
 }
 
 .rc-main {
-    height: 100%
+  display: flex;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #id-div-chats {
@@ -27,8 +37,6 @@
 }
 
 .rc-input {
-    /*height: 200px;*/
-    position: fixed;
-    bottom: 0px;
-    left: 100px;
+    height: 30%;
+  
 }
