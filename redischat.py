@@ -51,7 +51,9 @@ def stream():
 @app.route('/chat/subscribe')
 def subscribe():
     print('subscribe')
-    return flask.Response(stream(), mimetype="text/event-stream")
+    s = stream()
+    print('yield subscribe',s)
+    return flask.Response(s, mimetype="text/event-stream")
 
 
 @app.route('/chat')
