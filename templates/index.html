@@ -6,20 +6,24 @@
     <link rel="stylesheet" href="/static/bootstrap.css">
     <link rel="stylesheet" href="/static/chat.css">
     <script src="/static/jquery.min.js"></script>
+    <script src="/static/bootstrap.min.js"></script>
     <script src="/static/chat.js"></script>
  </head>
 
  <body>
+   <nav class="navbar navbar-inverse ">
+       <a class="navbar-brand" href="#">聊天室</a>
+       <a id="id-div-chats-title" class="rc-chats-title ">大厅</a>
+   </nav>
    <div class="container">
      <div class="row rc-main">
        <div id='id-div-channels' class="rc-left col-xs-2 col-md-4">
-           <h1 class="rc-title-h1">聊天室</h1>
-           <a class="rc-channel" href="#">大厅</a>
-           <a class="rc-channel" href="#">游戏</a>
-           <a class="rc-channel"href="#">灌水</a>
+           <a class="rc-channel navbar-brand" href="#">大厅</a>
+           <a class="rc-channel navbar-brand" href="#">音乐</a>
+           <a class="rc-channel navbar-brand"href="#">电影</a>
        </div>
        <div class="rc-right container col-xs-10 col-md-8">
-         <h2 id="id-div-chats-title" class="rc-chats-title">大厅</h2>
+
           <div id="id-div-chats" class="rc-chats row">
               </div>
           <div class="rc-input">

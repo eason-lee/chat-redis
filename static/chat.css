@@ -28,16 +28,15 @@
     font-size: 20px;
     height: 49px;
     padding-top: 17px;
-    color: #61605d;
+    color: #a7a6a4;
 }
 
 .rc-chats-title {
-  display: block;
-  padding-left: 48%;
-  font-size: 20px;
-  height: 49px;
-  padding-top: 17px;
-  color: #0078e7;
+    color: #f1f1f1;
+    height: 50px;
+    padding: 15px 44%;
+    font-size: 18px;
+    line-height: 49px;
 }
 
 .active {
@@ -52,7 +51,6 @@
 }
 
 #id-div-chats {
-    /*background: red;*/
     height: 62%;
     overflow-y: scroll;
     padding-top: 15px;
@@ -61,9 +59,11 @@
 .rc-input {
     height: 30%;
 }
+
 .rc-form {
     border-radius: 0px;
     border-color: #c1b5b5;
     border-style: solid;
     border-width: 0px 0px 0px 0px;
 }
+
