@@ -1,3 +1,7 @@
+body {
+    background: #eee;
+}
+
 .rc-full-width {
     width: 100%;
 }
@@ -77,6 +81,18 @@
     background: #d5f1ff;
     border-radius: 10px;
     padding: 10px;
+    display: table-cell;
+}
+
+.chat-item__time {
+    text-align: center;
+    color: #cccbcb;
+}
+
+.chat-item__details {
+    position: relative;
+    left: 65px;
+    bottom: 54px;
 }
 
 .chat-item__time {
@@ -91,8 +107,8 @@
     border-width:8px 18px 8px 0;
     border-style:solid;
     border-color:transparent #d5f1ff transparent transparent;
-    top:15px;
-    left:-18px;
+    top:12px;
+    left:-14px;
 }
 
 .right:before{

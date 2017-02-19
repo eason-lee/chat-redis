@@ -24,15 +24,15 @@
         var time = chat.created_time;
         var t = `
         <div class="chat-item burstStart read burstFinal">
-            <a class="chat-item__time js-chat-time" href="#">
+            <div class="chat-item__time js-chat-time" href="#">
                 <time data-time="${time}"></time>
-            </a>
+            </div>
             <div class="chat-item__container">
                 <div class="chat-item__aside">
                     <div class="chat-item__avatar">
                         <span class="widget">
                             <div class="trpDisplayPicture avatar-s">
-                                <img src="http://www.lslucky.top/static/image/default-portrait.png"  height="40" width="40" class="avatar__image" alt="">
+                                <img src="http://www.lslucky.top/static/image/default-portrait.png"  height="50" width="50" class="avatar__image" alt="">
                             </div>
                         </span>
                     </div>
