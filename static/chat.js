@@ -24,12 +24,15 @@
         var time = chat.created_time;
         var t = `
         <div class="chat-item burstStart read burstFinal">
+            <a class="chat-item__time js-chat-time" href="#">
+                <time data-time="${time}"></time>
+            </a>
             <div class="chat-item__container">
                 <div class="chat-item__aside">
                     <div class="chat-item__avatar">
                         <span class="widget">
                             <div class="trpDisplayPicture avatar-s">
-                                <img src="http://www.lslucky.top/static/image/default-portrait.png"  height="30" width="30" class="avatar__image" alt="">
+                                <img src="http://www.lslucky.top/static/image/default-portrait.png"  height="40" width="40" class="avatar__image" alt="">
                             </div>
                         </span>
                     </div>
@@ -38,14 +41,12 @@
                     <i class="chat-item__icon icon-check chat-item__icon--read chat-item__icon--read-by-some js-chat-item-readby"></i>
                     <i class="chat-item__icon icon-ellipsis"></i>
                 </div>
-                <div class="chat-item__content">
-                    <div class="chat-item__details">
+                <div class="chat-item__details">
                         <div class="chat-item__from js-chat-item-from">${name}</div>
-                        <a class="chat-item__time js-chat-time" href="#">
-                            <time data-time="${time}"></time>
-                        </a>
-                    </div>
-                    <div class="chat-item__text js-chat-item-text">${content}</div>
+
+                </div>
+                <div class="chat-item__content">
+                    <div class="chat-item__text left js-chat-item-text">${content}</div>
                 </div>
             </div>
         </div>
@@ -139,7 +140,11 @@
     // long time ago
     var longTimeAgo = function() {
       var timeAgo = function(time, ago) {
-        return Math.round(time) + ago;
+        if(ago == ' 秒前' ){
+            return ' 刚刚';
+        } else {
+            return Math.round(time) + ago;
+        }
       };
 
       $('time').each(function(i, e){
