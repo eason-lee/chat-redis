@@ -63,7 +63,7 @@ def chat_add():
     msg = request.get_json()
     name = msg.get('name', '')
     if name == '':
-        name = '<无名>'
+        name = '无名'
     content = msg.get('content', '')
     channel = msg.get('channel', '')
     r = {

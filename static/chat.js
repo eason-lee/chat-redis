@@ -68,6 +68,7 @@
         var t = chatItemTemplate(chat);
         chatsDiv.append(t);
         scrollToBottom(selector);
+        $('#id-input-content').val("");
     };
 
     var chatResponse = function(r) {
