@@ -91,11 +91,19 @@
     var sendMessage = function(){
       var name = $('#id-input-name').val();
       var content = $('#id-input-content').val();
-      var message = {
-        name: name,
-        content: content,
-        channel: currentChannel,
-      };
+      if(content == "") {
+          var selector = '#id-input-content';
+          $(selector).css('background-color','#ffd2d2');
+          setTimeout(function(){
+              $(selector).css('background-color','white');
+          }, 800);
+      } else {
+          var message = {
+            name: name,
+            content: content,
+            channel: currentChannel,
+          };
+      }
       var request = {
         url: '/chat/add',
         type: 'post',
