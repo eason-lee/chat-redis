@@ -91,6 +91,10 @@
     var sendMessage = function(){
       var name = $('#id-input-name').val();
       var content = $('#id-input-content').val();
+      var function trim(str){
+        return str.replace(/^(\s|\u00A0)+/,'').replace(/(\s|\u00A0)+$/,'');
+      }
+      var content = trim(content)
       if(content == "") {
           var selector = '#id-input-content';
           $(selector).css('background-color','#ffd2d2');
